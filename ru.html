@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 56 € в месяц</title>
-<meta name="description" content="Лазерная процедура Flow3 с удобной рассрочкой от 56 € в месяц. Inbank и LHV. Одна инвестиция — результат на всю жизнь. KSA Глазной Центр — ведущий центр лазерной хирургии Эстонии.">
-<meta property="og:title" content="Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 56 € в месяц">
+<title>Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 63 € в месяц</title>
+<meta name="description" content="Лазерная процедура Flow3 с удобной рассрочкой от 63 € в месяц. Inbank и LHV. Одна инвестиция — результат на всю жизнь. KSA Глазной Центр — ведущий центр лазерной хирургии Эстонии.">
+<meta property="og:title" content="Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 63 € в месяц">
 <meta property="og:description" content="Зачем платить за очки и линзы всю жизнь? Лазерная процедура Flow3 — одна инвестиция, результат навсегда. Удобная рассрочка через Inbank и LHV.">
 <meta property="og:type" content="website">
 
@@ -51,7 +51,7 @@
     <div class="hero__grid">
       <div class="hero__content">
         <div class="hero__badge">Гибкое финансирование</div>
-        <h1 class="hero__title">Жизнь без очков от 56 € в месяц</h1>
+        <h1 class="hero__title">Жизнь без очков от 63 € в месяц</h1>
         <p class="hero__subtitle">Зачем платить за очки и линзы всю жизнь? Лазерная процедура KSA Flow3 — одна инвестиция, результат навсегда. Удобная рассрочка через Inbank и LHV.</p>
         <div class="hero__actions">
           <a href="#kalkulaator" class="btn btn--primary">Рассчитать платёж</a>
@@ -69,19 +69,19 @@
 <section class="stats">
   <div class="container">
     <div class="stats__grid">
-      <div class="reveal">
-        <div class="stats__number">от 56 €</div>
+      <div class="stats__item reveal">
+        <div class="stats__number">от 63 €</div>
         <div class="stats__label">ежемесячный платёж</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">2 990 €</div>
         <div class="stats__label">стоимость процедуры</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">5–10 000 €</div>
         <div class="stats__label">экономия за 10 лет</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">0 €</div>
         <div class="stats__label">первоначальный взнос</div>
       </div>
@@ -536,7 +536,7 @@ function calculatePayment(months) {
   const r = 0.099 / 12;
   const n = months;
   const monthly = (principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)) + 0.9;
-  return Math.round(monthly);
+  return Math.max(Math.round(monthly), 63);
 }
 
 function updateCalculator() {

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 56 € kuus</title>
-<meta name="description" content="Flow3 laserprotseduur mugava järelmaksuga alates 56 € kuus. Inbank ja LHV. Üks investeering, eluaegne tulemus. KSA Silmakeskus — Eesti juhtiv laserkirurgia keskus.">
-<meta property="og:title" content="Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 56 € kuus">
+<title>Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 63 € kuus</title>
+<meta name="description" content="Flow3 laserprotseduur mugava järelmaksuga alates 63 € kuus. Inbank ja LHV. Üks investeering, eluaegne tulemus. KSA Silmakeskus — Eesti juhtiv laserkirurgia keskus.">
+<meta property="og:title" content="Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 63 € kuus">
 <meta property="og:description" content="Miks maksta prillide ja läätsede eest igavesti? Flow3 laserprotseduur — üks investeering, eluaegne tulemus. Mugav järelmaks Inbanki ja LHV kaudu.">
 <meta property="og:type" content="website">
 
@@ -51,7 +51,7 @@
     <div class="hero__grid">
       <div class="hero__content">
         <div class="hero__badge">Paindlik finantseerimine</div>
-        <h1 class="hero__title">Prillivaba elu alates 56 € kuus</h1>
+        <h1 class="hero__title">Prillivaba elu alates 63 € kuus</h1>
         <p class="hero__subtitle">Miks maksta prillide ja läätsede eest igavesti? KSA Flow3 laserprotseduur — üks investeering, eluaegne tulemus. Mugav järelmaks Inbanki ja LHV kaudu.</p>
         <div class="hero__actions">
           <a href="#kalkulaator" class="btn btn--primary">Arvuta kuumakse</a>
@@ -69,19 +69,19 @@
 <section class="stats">
   <div class="container">
     <div class="stats__grid">
-      <div class="reveal">
-        <div class="stats__number">alates 56 €</div>
+      <div class="stats__item reveal">
+        <div class="stats__number">alates 63 €</div>
         <div class="stats__label">kuumakse</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">2 990 €</div>
         <div class="stats__label">protseduuri hind</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">5–10 000 €</div>
         <div class="stats__label">säästad 10 aastaga</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">0 €</div>
         <div class="stats__label">sissemakse</div>
       </div>
@@ -536,7 +536,7 @@ function calculatePayment(months) {
   const r = 0.099 / 12;
   const n = months;
   const monthly = (principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)) + 0.9;
-  return Math.round(monthly);
+  return Math.max(Math.round(monthly), 63);
 }
 
 function updateCalculator() {

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flow3 Financing — KSA Eye Centre | Life Without Glasses from 56 € per Month</title>
-<meta name="description" content="Flow3 laser eye procedure with flexible financing from 56 € per month. Inbank and LHV. One investment, a lifetime result. KSA Eye Centre — Estonia's leading laser surgery centre.">
-<meta property="og:title" content="Flow3 Financing — KSA Eye Centre | Life Without Glasses from 56 € per Month">
+<title>Flow3 Financing — KSA Eye Centre | Life Without Glasses from 63 € per Month</title>
+<meta name="description" content="Flow3 laser eye procedure with flexible financing from 63 € per month. Inbank and LHV. One investment, a lifetime result. KSA Eye Centre — Estonia's leading laser surgery centre.">
+<meta property="og:title" content="Flow3 Financing — KSA Eye Centre | Life Without Glasses from 63 € per Month">
 <meta property="og:description" content="Why pay for glasses and contact lenses forever? Flow3 laser eye procedure — one investment, a lifetime result. Flexible financing through Inbank and LHV.">
 <meta property="og:type" content="website">
 
@@ -51,7 +51,7 @@
     <div class="hero__grid">
       <div class="hero__content">
         <div class="hero__badge">Flexible financing</div>
-        <h1 class="hero__title">Life without glasses from 56 € per month</h1>
+        <h1 class="hero__title">Life without glasses from 63 € per month</h1>
         <p class="hero__subtitle">Why pay for glasses and contact lenses forever? KSA Flow3 laser eye procedure — one investment, a lifetime result. Flexible financing through Inbank and LHV.</p>
         <div class="hero__actions">
           <a href="#kalkulaator" class="btn btn--primary">Calculate monthly payment</a>
@@ -69,19 +69,19 @@
 <section class="stats">
   <div class="container">
     <div class="stats__grid">
-      <div class="reveal">
-        <div class="stats__number">from 56 €</div>
+      <div class="stats__item reveal">
+        <div class="stats__number">from 63 €</div>
         <div class="stats__label">monthly payment</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">2 990 €</div>
         <div class="stats__label">procedure price</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">5–10 000 €</div>
         <div class="stats__label">saved over 10 years</div>
       </div>
-      <div class="reveal">
+      <div class="stats__item reveal">
         <div class="stats__number">0 €</div>
         <div class="stats__label">down payment</div>
       </div>
@@ -536,7 +536,7 @@ function calculatePayment(months) {
   const r = 0.099 / 12;
   const n = months;
   const monthly = (principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)) + 0.9;
-  return Math.round(monthly);
+  return Math.max(Math.round(monthly), 63);
 }
 
 function updateCalculator() {
