@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flow3 Financing — KSA Eye Centre | Life Without Glasses from 62 € per Month</title>
-<meta name="description" content="Flow3 laser eye procedure with flexible financing from 62 € per month. Inbank and LHV. One investment, a lifetime result. KSA Eye Centre — Estonia's leading laser surgery centre.">
-<meta property="og:title" content="Flow3 Financing — KSA Eye Centre | Life Without Glasses from 62 € per Month">
+<title>Flow3 Financing — KSA Eye Centre | Life Without Glasses from 56 € per Month</title>
+<meta name="description" content="Flow3 laser eye procedure with flexible financing from 56 € per month. Inbank and LHV. One investment, a lifetime result. KSA Eye Centre — Estonia's leading laser surgery centre.">
+<meta property="og:title" content="Flow3 Financing — KSA Eye Centre | Life Without Glasses from 56 € per Month">
 <meta property="og:description" content="Why pay for glasses and contact lenses forever? Flow3 laser eye procedure — one investment, a lifetime result. Flexible financing through Inbank and LHV.">
 <meta property="og:type" content="website">
 
@@ -51,7 +51,7 @@
     <div class="hero__grid">
       <div class="hero__content">
         <div class="hero__badge">Flexible financing</div>
-        <h1 class="hero__title">Life without glasses from 62 € per month</h1>
+        <h1 class="hero__title">Life without glasses from 56 € per month</h1>
         <p class="hero__subtitle">Why pay for glasses and contact lenses forever? KSA Flow3 laser eye procedure — one investment, a lifetime result. Flexible financing through Inbank and LHV.</p>
         <div class="hero__actions">
           <a href="#kalkulaator" class="btn btn--primary">Calculate monthly payment</a>
@@ -70,7 +70,7 @@
   <div class="container">
     <div class="stats__grid">
       <div class="reveal">
-        <div class="stats__number">from 62 €</div>
+        <div class="stats__number">from 56 €</div>
         <div class="stats__label">monthly payment</div>
       </div>
       <div class="reveal">
@@ -212,7 +212,7 @@
       <div class="calc__result">
         <div class="calc__result-number" id="monthlyPayment">~75 €/month</div>
         <div class="calc__result-label">estimated monthly payment</div>
-        <p class="calc__result-note">Example calculation based on Inbank terms: interest 8.9%, admin fee 0.90 €/month, contract fee 20 €. The actual offer depends on your profile.</p>
+        <p class="calc__result-note">Example calculation based on Inbank terms: interest 9.9%, admin fee 0.90 €/month, contract fee 20 €. The actual offer depends on your profile.</p>
       </div>
 
       <div class="calc__partners">
@@ -444,7 +444,7 @@
           Does financing change the procedure price?
           <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq__answer"><div class="faq__answer-inner">The procedure price remains the same — 2 990 €. With financing, interest (8.9% per annum) and small administrative fees apply. LHV charges no contract or admin fees; Inbank charges an admin fee of 0.90 €/month and a contract fee of 20 €. You will receive a precise offer after submitting your application.</div></div>
+        <div class="faq__answer"><div class="faq__answer-inner">The procedure price remains the same — 2 990 €. With financing, interest (9.9% per annum) and small administrative fees apply. LHV charges no contract or admin fees; Inbank charges an admin fee of 0.90 €/month and a contract fee of 20 €. You will receive a precise offer after submitting your application.</div></div>
       </div>
     </div>
   </div>
@@ -533,7 +533,7 @@ const monthlyPayment = document.getElementById('monthlyPayment');
 
 function calculatePayment(months) {
   const principal = 2990;
-  const r = 0.089 / 12;
+  const r = 0.099 / 12;
   const n = months;
   const monthly = (principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)) + 0.9;
   return Math.round(monthly);

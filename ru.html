@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 62 € в месяц</title>
-<meta name="description" content="Лазерная процедура Flow3 с удобной рассрочкой от 62 € в месяц. Inbank и LHV. Одна инвестиция — результат на всю жизнь. KSA Глазной Центр — ведущий центр лазерной хирургии Эстонии.">
-<meta property="og:title" content="Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 62 € в месяц">
+<title>Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 56 € в месяц</title>
+<meta name="description" content="Лазерная процедура Flow3 с удобной рассрочкой от 56 € в месяц. Inbank и LHV. Одна инвестиция — результат на всю жизнь. KSA Глазной Центр — ведущий центр лазерной хирургии Эстонии.">
+<meta property="og:title" content="Рассрочка на Flow3 — KSA Глазной Центр | Жизнь без очков от 56 € в месяц">
 <meta property="og:description" content="Зачем платить за очки и линзы всю жизнь? Лазерная процедура Flow3 — одна инвестиция, результат навсегда. Удобная рассрочка через Inbank и LHV.">
 <meta property="og:type" content="website">
 
@@ -51,7 +51,7 @@
     <div class="hero__grid">
       <div class="hero__content">
         <div class="hero__badge">Гибкое финансирование</div>
-        <h1 class="hero__title">Жизнь без очков от 62 € в месяц</h1>
+        <h1 class="hero__title">Жизнь без очков от 56 € в месяц</h1>
         <p class="hero__subtitle">Зачем платить за очки и линзы всю жизнь? Лазерная процедура KSA Flow3 — одна инвестиция, результат навсегда. Удобная рассрочка через Inbank и LHV.</p>
         <div class="hero__actions">
           <a href="#kalkulaator" class="btn btn--primary">Рассчитать платёж</a>
@@ -70,7 +70,7 @@
   <div class="container">
     <div class="stats__grid">
       <div class="reveal">
-        <div class="stats__number">от 62 €</div>
+        <div class="stats__number">от 56 €</div>
         <div class="stats__label">ежемесячный платёж</div>
       </div>
       <div class="reveal">
@@ -212,7 +212,7 @@
       <div class="calc__result">
         <div class="calc__result-number" id="monthlyPayment">~75 €/мес</div>
         <div class="calc__result-label">ориентировочный ежемесячный платёж</div>
-        <p class="calc__result-note">Примерный расчёт на условиях Inbank: ставка 8,9%, плата за обслуживание 0,90 €/мес, плата за оформление 20 €. Реальное предложение зависит от вашего профиля.</p>
+        <p class="calc__result-note">Примерный расчёт на условиях Inbank: ставка 9,9%, плата за обслуживание 0,90 €/мес, плата за оформление 20 €. Реальное предложение зависит от вашего профиля.</p>
       </div>
 
       <div class="calc__partners">
@@ -444,7 +444,7 @@
           Меняется ли цена процедуры при рассрочке?
           <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Цена процедуры остаётся прежней — 2 990 €. При рассрочке добавляются проценты (8,9% годовых) и небольшие административные сборы. У LHV нет платы за оформление и обслуживание, у Inbank — плата за обслуживание 0,90 €/мес и плата за оформление 20 €. Точное предложение вы получите после подачи заявки.</div></div>
+        <div class="faq__answer"><div class="faq__answer-inner">Цена процедуры остаётся прежней — 2 990 €. При рассрочке добавляются проценты (9,9% годовых) и небольшие административные сборы. У LHV нет платы за оформление и обслуживание, у Inbank — плата за обслуживание 0,90 €/мес и плата за оформление 20 €. Точное предложение вы получите после подачи заявки.</div></div>
       </div>
     </div>
   </div>
@@ -533,7 +533,7 @@ const monthlyPayment = document.getElementById('monthlyPayment');
 
 function calculatePayment(months) {
   const principal = 2990;
-  const r = 0.089 / 12;
+  const r = 0.099 / 12;
   const n = months;
   const monthly = (principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)) + 0.9;
   return Math.round(monthly);

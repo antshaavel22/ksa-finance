@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 62 € kuus</title>
-<meta name="description" content="Flow3 laserprotseduur mugava järelmaksuga alates 62 € kuus. Inbank ja LHV. Üks investeering, eluaegne tulemus. KSA Silmakeskus — Eesti juhtiv laserkirurgia keskus.">
-<meta property="og:title" content="Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 62 € kuus">
+<title>Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 56 € kuus</title>
+<meta name="description" content="Flow3 laserprotseduur mugava järelmaksuga alates 56 € kuus. Inbank ja LHV. Üks investeering, eluaegne tulemus. KSA Silmakeskus — Eesti juhtiv laserkirurgia keskus.">
+<meta property="og:title" content="Flow3 järelmaks — KSA Silmakeskus | Prillivaba elu alates 56 € kuus">
 <meta property="og:description" content="Miks maksta prillide ja läätsede eest igavesti? Flow3 laserprotseduur — üks investeering, eluaegne tulemus. Mugav järelmaks Inbanki ja LHV kaudu.">
 <meta property="og:type" content="website">
 
@@ -51,7 +51,7 @@
     <div class="hero__grid">
       <div class="hero__content">
         <div class="hero__badge">Paindlik finantseerimine</div>
-        <h1 class="hero__title">Prillivaba elu alates 62 € kuus</h1>
+        <h1 class="hero__title">Prillivaba elu alates 56 € kuus</h1>
         <p class="hero__subtitle">Miks maksta prillide ja läätsede eest igavesti? KSA Flow3 laserprotseduur — üks investeering, eluaegne tulemus. Mugav järelmaks Inbanki ja LHV kaudu.</p>
         <div class="hero__actions">
           <a href="#kalkulaator" class="btn btn--primary">Arvuta kuumakse</a>
@@ -70,7 +70,7 @@
   <div class="container">
     <div class="stats__grid">
       <div class="reveal">
-        <div class="stats__number">alates 62 €</div>
+        <div class="stats__number">alates 56 €</div>
         <div class="stats__label">kuumakse</div>
       </div>
       <div class="reveal">
@@ -212,7 +212,7 @@
       <div class="calc__result">
         <div class="calc__result-number" id="monthlyPayment">~75 €/kuus</div>
         <div class="calc__result-label">hinnanguline kuumakse</div>
-        <p class="calc__result-note">Näidisarvutus Inbanki tingimustel: intress 8,9%, haldustasu 0,90 €/kuus, lepingutasu 20 €. Tegelik pakkumine sõltub sinu profiilist.</p>
+        <p class="calc__result-note">Näidisarvutus Inbanki tingimustel: intress 9,9%, haldustasu 0,90 €/kuus, lepingutasu 20 €. Tegelik pakkumine sõltub sinu profiilist.</p>
       </div>
 
       <div class="calc__partners">
@@ -444,7 +444,7 @@
           Kas järelmaks muudab protseduuri hinda?
           <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq__answer"><div class="faq__answer-inner">Protseduuri hind jääb samaks — 2 990 €. Järelmaksu korral lisandub intress (8,9% aastas) ja väikesed haldustasud. LHV puhul puudub lepingutasu ja haldustasu, Inbankil on haldustasu 0,90 €/kuus ja lepingutasu 20 €. Täpse pakkumise saad pärast taotluse esitamist.</div></div>
+        <div class="faq__answer"><div class="faq__answer-inner">Protseduuri hind jääb samaks — 2 990 €. Järelmaksu korral lisandub intress (9,9% aastas) ja väikesed haldustasud. LHV puhul puudub lepingutasu ja haldustasu, Inbankil on haldustasu 0,90 €/kuus ja lepingutasu 20 €. Täpse pakkumise saad pärast taotluse esitamist.</div></div>
       </div>
     </div>
   </div>
@@ -533,7 +533,7 @@ const monthlyPayment = document.getElementById('monthlyPayment');
 
 function calculatePayment(months) {
   const principal = 2990;
-  const r = 0.089 / 12;
+  const r = 0.099 / 12;
   const n = months;
   const monthly = (principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)) + 0.9;
   return Math.round(monthly);
