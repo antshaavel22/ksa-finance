@@ -236,6 +236,127 @@
     .testi-inline__quote { font-size: 0.875rem; color: var(--color-text-secondary, #555); line-height: 1.6; margin: 0; }
     .testi-inline__name { font-size: 0.75rem; color: var(--color-text-muted, #999); margin-top: 0.25rem; }
   </style>
+
+<!-- SEO: Canonical + hreflang -->
+<link rel="canonical" href="https://finance.ksa.ee/">
+<link rel="alternate" hreflang="et" href="https://finance.ksa.ee/">
+<link rel="alternate" hreflang="ru" href="https://finance.ksa.ee/ru">
+<link rel="alternate" hreflang="en" href="https://finance.ksa.ee/en">
+<link rel="alternate" hreflang="x-default" href="https://finance.ksa.ee/">
+
+<!-- SEO: OG improvements -->
+<meta property="og:url" content="https://finance.ksa.ee/">
+<meta property="og:site_name" content="KSA Silmakeskus">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- SEO: Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["MedicalBusiness", "LocalBusiness"],
+      "@id": "https://ksa.ee/#organization",
+      "name": "KSA Silmakeskus",
+      "alternateName": "KSA Eye Clinic",
+      "url": "https://ksa.ee",
+      "description": "Estonia's leading laser eye surgery clinic. Flow3 SmartSurface touch-free vision correction. 55,000+ procedures, 0 ectasia cases in 20+ years.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Raua 36",
+        "addressLocality": "Tallinn",
+        "addressRegion": "Harjumaa",
+        "postalCode": "10124",
+        "addressCountry": "EE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 59.4323,
+        "longitude": 24.7546
+      },
+      "medicalSpecialty": "Ophthalmology",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "sameAs": ["https://ksa.ee"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://finance.ksa.ee/#webpage",
+      "url": "https://finance.ksa.ee/",
+      "name": "Flow3 laserkirurgia — ainult 18 € rohkem kui läätsed | KSA Silmakeskus",
+      "description": "Sa maksad läätsede eest juba ~45 € kuus. Flow3 järelmaks on 63 €. Vahe: 18 € — kaks kohvi. 5 aasta pärast on kõik kompenseeritud. KSA Silmakeskus.",
+      "inLanguage": "et-EE",
+      "isPartOf": {"@id": "https://ksa.ee/#organization"},
+      "about": {"@id": "https://ksa.ee/#organization"},
+      "breadcrumb": {"@id": "https://finance.ksa.ee/#breadcrumb"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://finance.ksa.ee/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "KSA Silmakeskus",
+          "item": "https://ksa.ee"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Finants",
+          "item": "https://finance.ksa.ee/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Miks on vahe ainult 18 €, kui Flow3 maksab 2 990 €?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sa maksad läätsedele juba praegu ~45 € kuus. 60-kuuse järelmaksuga on Flow3 kuumakse umbes 63 €. Vahe on 18 € — kaks kohvi. 5 aasta pärast ei maksa enam mitte midagi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas Flow3 protseduuri saab maksta järelmaksuga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah. KSA teeb koostööd Inbanki ja LHV-ga, kes pakuvad paindlikku järelmaksu perioodiga 12–72 kuud. Sissemakset ei ole vaja ja otsuse saad mõne minutiga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui palju on täpne kuumakse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "60 kuu puhul on kuumakse umbes 63 €, 48 kuu puhul umbes 75 €. Täpse personaalse pakkumise saad pärast uuringut Inbankilt või LHV-lt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas uuringu hind arvestatakse maha?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah. Uuringu maksumus (19 €) arvestatakse 100% ulatuses protseduuri hinnast maha, kui tellid Flow3 60 päeva jooksul pärast uuringut."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mitu aastat garantiid on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KSA pakub kuni 7-aastast garantiid — pikim kogu Baltikumis. 20 aastat, 55 000+ protseduuri ja null ektaasia juhtu."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
